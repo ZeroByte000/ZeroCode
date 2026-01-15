@@ -105,6 +105,10 @@ impl EditorView {
         }
     }
 
+    pub fn set_status(&mut self, status: impl Into<String>) {
+        self.status = status.into();
+    }
+
     pub fn run(&mut self) -> Result<()> {
         let (mut terminal, _guard) = setup_terminal()?;
         while self.running {

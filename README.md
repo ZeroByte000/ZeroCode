@@ -23,6 +23,21 @@ Pastikan `~/.local/bin` ada di PATH:
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
+## Update
+
+- Saat start, ZeroCode akan mengecek versi terbaru dan menampilkan notifikasi di status bar jika ada update.
+- Untuk mematikan auto-check, buat file `zerocode.toml` di folder kerja:
+
+```toml
+update_check = false
+```
+
+## Versi
+
+```bash
+zerocode --version
+```
+
 ## Menjalankan
 
 Jika sudah di PATH:
