@@ -2,8 +2,35 @@
 
 CLI code editor ringan berbasis Rust.
 
+## Download dan Instalasi (Release)
+
+1) Buka halaman release:
+`https://github.com/ZeroByte000/ZeroCode/releases`
+
+2) Download binary sesuai OS:
+- macOS/Linux: `zerocode`
+- Windows: `zerocode.exe`
+
+3) (macOS/Linux) beri izin eksekusi dan pindahkan ke PATH:
+```bash
+chmod +x zerocode
+mkdir -p ~/.local/bin
+mv zerocode ~/.local/bin/
+```
+
+Pastikan `~/.local/bin` ada di PATH:
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
 ## Menjalankan
 
+Jika sudah di PATH:
+```bash
+zerocode
+```
+
+Atau dari source:
 ```bash
 cargo run -p zerocode
 ```
@@ -46,7 +73,7 @@ cargo run -p zerocode
 
 ## Catatan
 
-- Fitur masih tahap awal: belum ada syntax highlight, LSP, split view, atau tree file.
+- Fitur masih tahap awal: belum ada LSP, split view, atau tree file yang kompleks.
 - Search saat ini mencari kemunculan pertama dari awal dokumen.
 - Panel file menampilkan tree folder kerja (rekursif, dengan expand/collapse).
 - Ada item `..` untuk naik satu level folder.
