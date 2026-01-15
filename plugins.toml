@@ -1,0 +1,7 @@
+# Example plugin configuration for ZeroCode
+# Replace the command with your plugin executable path.
+
+[[plugins]]
+name = "word-count"
+command = "./target/debug/zerocode-plugin-word-count"
+args = ["--workspace", "."]
